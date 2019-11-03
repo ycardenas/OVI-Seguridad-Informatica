@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type="text/javascript"     src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="css/Estilo.css">
+<style type="text/css">
+<!--
+.Estilo1 {
+	font-size: 18px;
+	font-weight: bold;
+}
+-->
+</style>
+</head>
+
+<body>
+
+ 
+    <div  class="row">
+        <div id="content" class="col-lg-3">
+             
+			    <div id="menu_about">
+                <ul>
+                    <li class="link"><a href="#about" data-link="second">Empleado Seguro</a>&#8226</li>
+                    <li class="has-sub"><a title="" href="https://www.jose-aguilar.com/blog/secciones/wordpress/">Tipos de Seguridad Informatica</a>
+                    <li class="has-sub"><a title="" href="https://www.jose-aguilar.com/blog/secciones/joomla/">Proteccion de Datos</a>
+					<li class="has-sub"><a title="" href="https://www.jose-aguilar.com/blog/secciones/joomla/">Ciberseguridad</a>
+					<li class="has-sub"><a title="" href="https://www.jose-aguilar.com/blog/secciones/joomla/">Seguridad tecnologica</a>
+                </ul>
+            </div>
+        </div>
+          </div>
+    
+ 
+	
+	<div id="menu_about">
+<a class="link" class="has-sub" href="#about"  data-link="first">
+    &nbsp;&nbsp; Why We Exist
+</a> &#8226; 
+<a class="link" href="#about" data-link="second">Who We Are</a> &#8226;
+<a class="link" href="#about" data-link="third">What We Do</a> &#8226; 
+<a class="link" href="#about" data-link="fourth">How We Think</a> &#8226; 
+<a class="link" href="#about" data-link="fifth">Where We Are Going</a>
+</div>
+<div id="pages_about" class="textContainer_about">
+<div class="textWord_about" data-link="first">
+ <p>ffffffffffffffffffffffffffff</p>
+ </div>
+<div class="textWord_about" data-link="second">
+  <p>ffffffffffffffffffffffffffff</p>
+</div>
+<div class="textWord_about" data-link="third">
+  <p>ffffffffffffffffffffffffffff</p>
+</div>
+<div class="textWord_about" data-link="fourth">
+  <p>ffffffffffffffffffffffffffff</p>
+  <p>ffffffffffffffffffffffffffff</p>
+  <p>ffffffffffffffffffffffffffff</p>
+  <p>ffffffffffffffffffffffffffff</p>
+  <p>ffffffffffffffffffffffffffff</p>
+</div>
+<div class="textWord_about" data-link="fifth">
+  <p>ffffffffffffffffffffffffffff</p>
+</div>
+</div>
+
+
+<script type="text/javascript">
+$('.textWord_about').hide();
+
+$('.link').click(function() {
+    $('.textWord_about').hide();       
+    $('.textWord_about[data-link=' + $(this).data('link') + ']').fadeIn({
+        width: '200px'
+    }, 300);
+});
+</script>
+
+
+    
+ 
+</body>
+</html>
